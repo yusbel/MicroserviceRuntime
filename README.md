@@ -17,6 +17,7 @@ What I’m working on?
 
 The goal of this concept is to have a practical implementation in .Net core that include an out of the box implementation for raising and consuming events with security controls to protect confidential data in transit. It would be expensive to build the code that handle the requirements of saving, sending, and receiving events on each microservice. Implementing a runtime service that implement these capabilities is what this concept is intended to provide you.
 
+This architecture use a local database transaction to save the entities and events associated with the entities change. Each microservice database have a table for outgoing events added by the runtime entity framework context. It breaks the distributed transaction to save data in a database and dispatch events to the service bus hub. 
 
 ## Architecture
 
