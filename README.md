@@ -57,6 +57,16 @@ This architecture use a local database transaction to save the entities and even
 [concept]: https://learningruntimestor.blob.core.windows.net/runtimedocumentation/MicroserviceConceptAndDb120by120.png "Microservice concept"
 
 
+## Project structure
+
+### Assemblies, namespaces and classes
+
+![alt_text][assemblies]
+
+[assemblies]: https://learningruntimestor.blob.core.windows.net/runtimedocumentation/ProjectStructure.png "Project assemblies"
+
+
+
 
 ### Configuration
 * Azure App Configuration will be used for all development life cycle environments.
