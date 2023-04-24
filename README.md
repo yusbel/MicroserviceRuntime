@@ -64,9 +64,24 @@ This architecture use a local database transaction to save the entities and even
 | Assembly | Description |
 | --- | --- |
 | Time2Code.EmployeeService | Employee OnBoarding microservice. This assembly include all the service depedencies. It implement the ICoreHostBuilder interface. |
-| --- | --- |
 | Time2Code.PayRoll | PayRoll microservice. This assembly include all the service dependencies. It implement the ICoreHostBuilder interface. |
-| --- | --- |
+| Time2Code.Runtime | The runtime service have the entry point to excecute the service. |
+
+**Time2Code.Runtime:**
+* Create, configure and run a generic host with a HostedService to setup Azure services dependencies.
+* Create service environment variables.
+* Setup the microservice as a Client Application on Azure Active directory.
+* Save application password on Microservice Azure Key Vault.
+* Create Azure Key Vault poilicies for reading secrets.
+* Store Public Keys on service blob storage account.
+
+**Time2Code.EmployeeService:**
+| Azure Service | Service Name | Description |
+| --- | --- | --- |
+| Azure Key Vault | EmployeeServiceKeyVault | Store secrets and certificates |
+
+
+
 
 
 
