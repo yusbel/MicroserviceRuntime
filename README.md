@@ -61,6 +61,15 @@ This architecture use a local database transaction to save the entities and even
 
 ### Assemblies, namespaces and classes
 
+| Assembly | Description |
+| --- | --- |
+| Time2Code.EmployeeService | Employee OnBoarding microservice. This assembly include all the service depedencies. It implement the ICoreHostBuilder interface. |
+| --- | --- |
+| Time2Code.PayRoll | PayRoll microservice. This assembly include all the service dependencies. It implement the ICoreHostBuilder interface. |
+| --- | --- |
+
+
+
 ![alt_text][assemblies]
 
 [assemblies]: https://learningruntimestor.blob.core.windows.net/runtimedocumentation/ProjectStructure.png "Project assemblies"
