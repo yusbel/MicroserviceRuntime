@@ -76,6 +76,15 @@ This architecture use a local database transaction to save the entities and even
 * Store Public Keys on service blob storage account.
 
 **Time2Code.EmployeeService:**
+| Namespaces | Description |
+| --- | --- |
+| Time2Code.Employee.Services | Hold the HostedServices |
+| Time2Code.Employee.DbContext | Hold the database context |
+| Time2Code.Employee.Clients | Hold the references to external endpoints |
+| Time2Code.Employee.Host | Hold the implementation of ICoreHostBuilder. ICoreHostBuilder specify a public member that return a IHostBuilder |
+| Time2Code.Employee.Messages | Hold the external and incoming events |
+
+
 | Azure Service | Service Name | Description |
 | --- | --- | --- |
 | Azure Key Vault | EmployeeServiceKeyVault | Store secrets and certificates |
